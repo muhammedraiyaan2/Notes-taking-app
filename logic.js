@@ -1,8 +1,9 @@
 let btn = document.getElementById('btn')
 let text = document.getElementById('text')
-let head=document.getElementById('head')
+let head = document.getElementById('head')
+let clear = document.getElementById('clear')
 //show note function
-localStorage.setItem('head',head.value)
+localStorage.setItem('head', head.value)
 function showNotes() {
  let notes = localStorage.getItem('notes')
  if (notes == null) {
@@ -42,11 +43,11 @@ btn.addEventListener("click", function () {
  else {
   notesObj = JSON.parse(notes)
  }
- let myObj={
-  title:head.value,
-  text:text.value
+ let myObj = {
+  title: head.value,
+  text: text.value
  }
- head.value=""
+ head.value = ""
  text.value = ""
  notesObj.push(myObj)
  localStorage.setItem(`notes`, JSON.stringify(notesObj))
@@ -77,4 +78,7 @@ search.addEventListener('input', function () {
    element.style.display = "none"
   }
  });
+})
+clear.addEventListener("click",function(){
+ localStorage.clear()
 })
