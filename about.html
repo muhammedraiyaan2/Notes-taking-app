@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <style>
+  .home {
+   margin-top: -2.5px;
+  }
+ </style>
+    <meta name="description" content="About the Notes taking app">
+    <link rel="shortcut icon" href="https://muhammedraiyaan2.github.io/Server/notes-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes taking app - About</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body id="body">
+  <nav id="nav" class="navbar navbar-expand-lg navbar-primary"> 
+    <a class="navbar-brand" href="#">Notes taking app</a> 
+    <button class="btn navbar-toggler navbar-toggler-icon" data-toggle="collapse" href="#collapsibleNavbar">
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="ml-auto navbar-nav">
+         <li class="nav-item">
+            <a class="nav-link home" href="index.html">Home</a>
+         </li>
+         <li class="nav-item">
+          <a class="nav-link home active" target="_self" href="about.html">About us</a>
+       </li>
+       <li class="nav-item">
+        <a class="nav-link home" target="_self" href="contact.html">Contact us</a>
+     </li>
+         <li class="nav-item">
+          <label class="text-primary" for="dark">Dark Mode</label>
+          <button id="dark" class="btn btn-primary">On/Off</button>
+         </li>
+      </ul>
+     </div>
+</nav>
+<div id="container" class="contianer-fluid text-white"><br>
+    <div class="mx-5">
+    <h1>About Notes taking app</h1>
+    <p>Notes taking app has madeup of html css and javascript with resposive design with vanilla javascript</p> 
+    <h1>About Founder</h1>
+    <p>Muhammad Raiyaan is the founder of the Notes taking app website, he is 11, he wants to make more projects like Notes taking app project, he is intermediate web developer.</p>
+    <br>
+</div>
+</div>
+</body>
+<script>
+let dark=document.getElementById('dark')
+let body=document.getElementById('body')
+let nav=document.getElementById('nav')
+let con=document.getElementById('container')
+con.style.background="#6c757d"
+dark.addEventListener("click",function(){
+    body.style.backgroundColor="#212529"
+    body.style.color="#f8f9fa"
+    nav.style.backgroundColor="#1c1c1c"
+    con.style.background="#28a745"
+})
+dark.addEventListener("dblclick",function(){
+    body.style.color="#212529"
+    body.style.backgroundColor="#fff"
+    nav.style.backgroundColor="#f8f9fa"
+    nav.style.color="white"
+    con.style.background="#6c757d"
+})
+</script>
+</html>
