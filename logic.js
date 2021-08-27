@@ -80,5 +80,8 @@ search.addEventListener('input', function () {
  });
 })
 clear.addEventListener("click",function(){
- localStorage.clear()
+  let con=confirm("Are you sure that you want to delete all of your notes")
+  if(con==true){
+localStorage.clear()
+  }
 })
