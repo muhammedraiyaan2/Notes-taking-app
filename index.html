@@ -6,6 +6,10 @@
   .home {
    margin-top: -2.5px;
   }
+  .loader{
+      background-color: red;
+      height: 3px;
+  }
  </style>
  <meta name="description" content="Notes taking app">
  <link rel="shortcut icon" href="https://muhammedraiyaan2.github.io/Server/notes-icon.png" type="image/x-icon">
@@ -24,6 +28,7 @@
 </head>
 
 <body id="body">
+  <div class="loader" id="loader"></div>
  <nav id="nav" class="navbar navbar-expand-lg navbar-primary bg-dark">
   <a class="navbar-brand" href="#">Notes Taking app</a>
   <button class="btn navbar-toggler navbar-toggler-icon" data-toggle="collapse" href="#collapsibleNavbar">
@@ -47,6 +52,7 @@
   </div>
  </nav>
  <br>
+ <div id="content">
  <div style="margin: 10px 100px;">
   <label for="head" class="form-label">Enter title</label>
   <input type="text" class="form-control" id="head" placeholder="Enter the title here...">
@@ -70,6 +76,7 @@
     </div>
 </div> -->
  </div>
+</div>
  <script src="logic.js"></script>
 </body>
 
