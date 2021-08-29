@@ -6,9 +6,18 @@
   .home {
    margin-top: -2.5px;
   }
+  #container{
+    margin: 10px 100px;
+  }
   .loader{
       background-color: red;
       height: 3px;
+  }
+  @media screen and (max-width:750px) {
+    #container{
+      margin: 0;
+      font-size: 15px;
+    }
   }
  </style>
  <meta name="description" content="Notes taking app">
@@ -26,7 +35,6 @@
  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
   integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
-
 <body id="body">
   <div class="loader" id="loader"></div>
  <nav id="nav" class="navbar navbar-expand-lg navbar-primary bg-dark">
@@ -53,7 +61,7 @@
  </nav>
  <br>
  <div id="content">
- <div style="margin: 10px 100px;">
+ <div id="container">
   <label for="head" class="form-label">Enter title</label>
   <input type="text" class="form-control" id="head" placeholder="Enter the title here...">
    <br>
