@@ -2,6 +2,20 @@ let btn = document.getElementById('btn')
 let text = document.getElementById('text')
 let head = document.getElementById('head')
 let clear = document.getElementById('clear')
+//loader
+let content=document.getElementById(`content`)
+let loader=document.getElementById('loader')
+let wid=0
+content.style.visibility="hidden"
+setInterval(() => {
+    wid++
+    loader.style.width=`${wid}%`
+    if(wid==100){
+    wid=-10*100000*10000*10000
+    loader.style.display="none"
+    content.style.visibility="visible"
+   }
+}, 10);
 //show note function
 localStorage.setItem('head', head.value)
 function showNotes() {
