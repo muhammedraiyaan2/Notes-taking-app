@@ -2,6 +2,8 @@ let btn = document.getElementById('btn')
 let text = document.getElementById('text')
 let head = document.getElementById('head')
 let clear = document.getElementById('clear')
+let container = document.getElementById('container')
+let body = document.getElementById('body')
 //loader
 let content=document.getElementById(`content`)
 let loader=document.getElementById('loader')
@@ -16,6 +18,11 @@ setInterval(() => {
     content.style.visibility="visible"
    }
 }, 10);
+// if(screenX){
+//   // content.style.fontSize="8px"
+//   // container.removeAttribute="style"
+//   body.style.background="red"
+// }
 //show note function
 localStorage.setItem('head', head.value)
 function showNotes() {
@@ -29,7 +36,7 @@ function showNotes() {
  let html = ``
  notesObj.forEach(function (element, index) {
   html += `
-  <div class="noteCard card m-3" style="width: 18rem;">
+  <div class="noteCard card m-3 text-light" style="background-image:url(https://images.pexels.com/photos/1029611/pexels-photo-1029611.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500); background-size:cover; width: 18rem; height: fit-content;">
   <!-- <img src="..." class="card-img-top" alt="..."> -->
   <div class="card-body">
    <h3 class="card-title">${element.title}</h3>
