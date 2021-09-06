@@ -36,12 +36,12 @@ function showNotes() {
  let html = ``
  notesObj.forEach(function (element, index) {
   html += `
-  <div class="noteCard card m-3 text-light" style="background-image:url(https://images.pexels.com/photos/1029611/pexels-photo-1029611.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500); background-size:cover; width: 18rem; height: fit-content;">
+  <div class="noteCard card m-3 text-light bg-info" style=" width: 18rem; height: fit-content;">
   <!-- <img src="..." class="card-img-top" alt="..."> -->
   <div class="card-body">
    <h3 class="card-title">${element.title}</h3>
    <p class="card-text">${element.text}</p>
-   <button onclick="to_delete(this.id)" id="${index}" class="btn btn-primary">Delete</button>
+   <i class="fas fa-trash-alt" onclick="to_delete(this.id)" id="${index}" style="margin-left:40%; color:red; font-size:30px;"></i>
   </div>
 </div>
   `
