@@ -115,5 +115,5 @@ setInterval(() => {
 setTimeout(() => {
   load.style.visibility="hidden"
   content.style.visibility="visible"
-  content.style.marginTop="-30%"
+  content.style.marginTop="-20%"
 }, 2000);
