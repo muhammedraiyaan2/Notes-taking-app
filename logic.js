@@ -113,7 +113,7 @@ setInterval(() => {
   b+=2
 }, 0.1);
 setTimeout(() => {
-  load.style.visibility="hidden"
+  load.style.display="none"
   content.style.visibility="visible"
-  content.style.marginTop="-20%"
+  content.style.marginBottom="100%"
 }, 2000);
