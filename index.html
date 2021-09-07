@@ -25,6 +25,13 @@
       font-size: 15px;
     }
   }
+  .pointer{
+transition: 0.6s;
+  }
+  .pointer:hover{
+cursor: pointer;
+transform: rotate(360deg);
+  }
  </style>
  <meta name="description" content="Notes taking app">
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
@@ -76,8 +83,8 @@
   <textarea class="form-control" id="text" placeholder="Enter the text here..." rows="4"></textarea>
   <br>
   <div style="display:inline-block">
-  <button class="btn btn-primary" id="btn">Submit</button>
-  <button class="btn btn-primary" id="clear">Clear all</button>
+  <button class="btn btn-primary" id="btn">Add note <i class="fal fa-plus-square"></i></button>
+  <button class="btn btn-primary" id="clear">Clear all <i class="fas fa-trash" style="font-size: 20px;"></i></button>
   </div>
   <h1>Your Notes</h1>
   <hr>
