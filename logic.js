@@ -41,7 +41,7 @@ function showNotes() {
   <div class="card-body">
    <h3 class="card-title">${element.title}</h3>
    <p class="card-text">${element.text}</p>
-   <i class="fas fa-trash-alt" onclick="to_delete(this.id)" id="${index}" style="margin-left:40%; color:red; font-size:30px;"></i>
+   <i class="fas fa-trash pointer" onclick="to_delete(this.id)" id="${index}"style="margin-left:40%; color:red; font-size:30px;"></i>
   </div>
 </div>
   `
