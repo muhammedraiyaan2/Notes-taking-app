@@ -9,15 +9,15 @@ let content=document.getElementById(`content`)
 let loader=document.getElementById('loader')
 let wid=0
 content.style.visibility="hidden"
-setInterval(() => {
-    wid++
-    loader.style.width=`${wid}%`
-    if(wid==100){
-    wid=-10*100000*10000*10000
-    loader.style.display="none"
-    content.style.visibility="visible"
-   }
-}, 10);
+// setInterval(() => {
+//     wid++
+//     loader.style.width=`${wid}%`
+//     if(wid==100){
+//     wid=-10*100000*10000*10000
+//     loader.style.display="none"
+//     content.style.visibility="visible"
+//    }
+// }, 10);
 // if(screenX){
 //   // content.style.fontSize="8px"
 //   // container.removeAttribute="style"
@@ -106,3 +106,14 @@ clear.addEventListener("click",function(){
 localStorage.clear()
   }
 })
+let b=0
+let load=document.getElementById(`load`)
+setInterval(() => {
+  load.style.transform=`rotate(${b}deg)`
+  b+=2
+}, 0.1);
+setTimeout(() => {
+  load.style.visibility="hidden"
+  content.style.visibility="visible"
+  content.style.marginTop="-30%"
+}, 2000);
