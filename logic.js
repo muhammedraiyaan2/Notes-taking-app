@@ -8,7 +8,7 @@ let body = document.getElementById('body')
 let content=document.getElementById(`content`)
 let loader=document.getElementById('loader')
 let wid=0
-content.style.visibility="hidden"
+content.style.display="none"
 // setInterval(() => {
 //     wid++
 //     loader.style.width=`${wid}%`
@@ -114,6 +114,5 @@ setInterval(() => {
 }, 0.1);
 setTimeout(() => {
   load.style.display="none"
-  content.style.visibility="visible"
-  content.style.marginBottom="100%"
+  content.style.display="block"
 }, 2000);
