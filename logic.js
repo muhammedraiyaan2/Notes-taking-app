@@ -8,7 +8,7 @@ let body = document.getElementById('body')
 let content=document.getElementById(`content`)
 let loader=document.getElementById('loader')
 let wid=0
-content.style.display="none"
+// content.style.display="none"
 // setInterval(() => {
 //     wid++
 //     loader.style.width=`${wid}%`
@@ -36,10 +36,11 @@ function showNotes() {
  let html = ``
  notesObj.forEach(function (element, index) {
   html += `
-  <div class="noteCard card m-3 text-light bg-info" style=" width: 18rem; height: fit-content;">
+  <div class="noteCard card m-3 text-dark
+  " style=" width: 18rem; height: fit-content;">
   <!-- <img src="..." class="card-img-top" alt="..."> -->
   <div class="card-body">
-   <h3 class="card-title">${element.title}</h3>
+   <h3 class="card-title text-center text-primary">${element.title}</h3>
    <p class="card-text">${element.text}</p>
    <i class="fas fa-trash pointer" onclick="to_delete(this.id)" id="${index}"style="margin-left:40%; color:red; font-size:30px;"></i>
   </div>
@@ -106,13 +107,13 @@ clear.addEventListener("click",function(){
 localStorage.clear()
   }
 })
-let b=0
-let load=document.getElementById(`load`)
-setInterval(() => {
-  load.style.transform=`rotate(${b}deg)`
-  b+=2
-}, 0.1);
-setTimeout(() => {
-  load.style.display="none"
-  content.style.display="block"
-}, 2000);
+// let b=0
+// let load=document.getElementById(`load`)
+// setInterval(() => {
+//   load.style.transform=`rotate(${b}deg)`
+//   b+=2
+// }, 0.1);
+// setTimeout(() => {
+//   load.style.display="none"
+//   content.style.display="block"
+// }, 2000);

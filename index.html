@@ -13,12 +13,6 @@
       background-color: red;
       height: 3px;
   }
-  body{
-    background-image: url(https://images.pexels.com/photos/847402/pexels-photo-847402.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
-    background-size: 100% 120%;
-    background-attachment: fixed;
-    height: 100%;
-  }
   @media screen and (max-width:750px) {
     #container{
       margin: 0;
@@ -53,9 +47,9 @@ transform: rotate(360deg);
  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
   integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
-<body id="body" class="text-light">
+<body id="body">
   <!-- <div class="loader" id="loader"></div> -->
- <nav id="nav" class="navbar navbar-expand-lg navbar-primary bg-dark">
+ <nav id="nav" class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="#">Notes Taking app</a>
   <button class="btn navbar-toggler navbar-toggler-icon" data-toggle="collapse" href="#collapsibleNavbar">
   </button>
@@ -65,10 +59,10 @@ transform: rotate(360deg);
      <a class="nav-link home active" href="index.html">Home</a>
     </li>
     <li class="nav-item">
-     <a class="nav-link home" target="_self" href="about.html">About us</a>
+     <a class="nav-link text-light home" target="_self" href="about.html">About us</a>
     </li>
     <li class="nav-item">
-     <a class="nav-link home" target="_self" href="contact.html">Contact us</a>
+     <a class="nav-link text-light home" target="_self" href="contact.html">Contact us</a>
     </li>
    </ul>
    <form class="mx-1 d-flex">
@@ -78,7 +72,6 @@ transform: rotate(360deg);
   </div>
  </nav>
  <br>
- <i class="fas fa-spinner fa-3x" id="load"></i>
  <div id="content">
  <div id="container">
   <label for="head" class="form-label">Enter title</label>
@@ -88,8 +81,8 @@ transform: rotate(360deg);
   <textarea class="form-control" id="text" placeholder="Enter the text here..." rows="4"></textarea>
   <br>
   <div style="display:inline-block">
-  <button class="btn btn-primary" id="btn">Add note <i class="fal fa-plus-square"></i></button>
-  <button class="btn btn-primary" id="clear">Clear all <i class="fas fa-trash" style="font-size: 20px;"></i></button>
+  <button class="btn btn-success" id="btn">Add note <i class="fal fa-plus-square"></i></button>
+  <button class="btn btn-danger" id="clear">Clear all <i class="fas fa-trash" style="font-size: 20px;"></i></button>
   </div>
   <h1>Your Notes</h1>
   <hr>
