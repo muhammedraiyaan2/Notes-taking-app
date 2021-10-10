@@ -35,13 +35,20 @@ function showNotes() {
  }
  let html = ``
  notesObj.forEach(function (element, index) {
+   let text = element.text
+   let title= element.title
+if(title==""){
+  title="None"
+}
+if(text==""){
+  text="None"
+}
   html += `
-  <div class="noteCard card m-3 text-dark
+  <div class="noteCard card mx-3 my-1 text-dark
   " style=" width: 18rem; height: fit-content;">
-  <!-- <img src="..." class="card-img-top" alt="..."> -->
   <div class="card-body">
-   <h3 class="card-title text-center text-primary">${element.title}</h3>
-   <p class="card-text">${element.text}</p>
+   <h3 class="card-title text-center text-primary">${title}</h3>
+   <p class="card-text">${text}</p>
    <i class="fas fa-trash pointer" onclick="to_delete(this.id)" id="${index}"style="margin-left:40%; color:red; font-size:30px;"></i>
   </div>
 </div>
